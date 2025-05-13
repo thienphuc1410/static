@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xalaflix : Visionnez des films gratuits doublés en français</title>
+
+    <meta name="description" content="Xalaflix propose le streaming gratuit de films doublés en français, des nouveautés exclusives et une navigation fluide pour des soirées cinéma réussies.">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <meta property="og:image" content="./images/banner.jpg"/>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #111;
+    }
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+    article {
+        font-family: "Poppins", serif;
+        max-width: 800px;
+        margin: auto;
+        padding: 0 15px;
+        color: #fff;
+    }
+    article img{
+        max-width: 100%;
+        height: auto;
+    }
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 1px 2px #000;
+        margin-top: 50px;
+    }
+    body > footer {
+        background: linear-gradient(180deg, rgb(0 0 0 / 18%) 0%, rgba(0, 0, 0, 0) 100%);
+        border-top: solid 2px rgb(23, 89, 104);
+        text-align: center;
+        color: #fff;
+        padding: 15px;
+        font-size: small;
+    }
+    .buttons {
+        margin: 10%;
+        text-align: center;
+    }
+
+    .btn-hover {
+        width: 300px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        height: 55px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+
+        border-radius: 50px;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .btn-hover:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .btn-hover:focus {
+        outline: none;
+    }
+    .btn-hover.color-9 {
+        background-image: linear-gradient(to right, #007aff, #007aff, #007aff, #007aff);
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 35px auto;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        overflow-x: auto;
+        color: #ffffff; 
+        border: none;
+    }
+
+
+    table th, table td {
+        border: 1px solid #444444; 
+        padding: 8px;
+        text-align: center;
+    }
+
+
+    table th {
+        background-color: #444444; 
+        font-weight: bold;
+        position: sticky; 
+        top: 0;
+        color: #ffffff; 
+    }
+
+
+    table tr:nth-child(even) {
+        background-color: #333333; 
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #2c2c2c; 
+    }
+
+    table tr:hover {
+        background-color: #555555; 
+    }
+
+
+    @media (max-width: 768px) {
+        table {
+            font-size: 12px; 
+        }
+        table th, table td {
+            padding: 6px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        table {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+        table thead {
+            display: none; 
+        }
+        table tr {
+            display: block;
+            margin-bottom: 10px;
+        }
+        table td {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5px;
+            border: 1px solid #444444; 
+        }
+        table td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ffffff; 
+        }
+    }
+
+
+    blockquote {
+        background-color: #333;
+        color: #fff;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-left: 5px solid #555;
+        font-style: italic;
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+    header p {
+        font-size: 14px;
+        color: #fff;
+        margin-top: 0;
+    }
+
+    span#ctrl_d {
+        color: #960EF3;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    header img {
+        margin: 40px auto;
+    }
+    section {
+        max-width: 1100px;
+        margin: auto;
+        color: #fff;
+    }
+
+    p.intro {
+        font-size: 22px;
+        margin-top: 0;
+        font-weight: 500;
+    }
+
+    .bnt {
+        background: #710EB4;
+        color: #E8E8E8;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        animation: pulse 2s infinite;
+    }
+    .bnt span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    p.foot_text {
+        font-size: 14px;
+        text-align: center;
+        color: #960EF3;
+        font-weight: bold;
+        margin-top: 68px;
+    }
+
+    .btnt {
+        background: #fff;
+        width: 260px;
+        text-transform: uppercase;
+        color: #141414;
+        font-weight: bold;
+        font-size: 12.9px;
+        text-align: center;
+        line-height: 37px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .btnt img {
+        margin-left: 5px;
+    }
+    
+    article a{
+        color: yellow;
+    }
+    @media only screen and (max-width: 767px) {
+        header img {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        section {
+            padding: 0 20px;
+        }
+    }
+    </style>
+    <script>
+    function isMobile() {
+        return /iPhone|iPad|iPod|Android|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+    }
+
+    function addBookmark() {
+        if (isMobile()) {
+            alert("Appuyez sur le bouton de partage et ajoutez ce site à vos favoris.");
+        } else {
+            alert("Appuyez sur Ctrl+D (Windows) ou Cmd+D (Mac) pour ajouter ce site à vos favoris.");
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <p>Ajoutez <a href="https://xalaflix.stream">xalaflix.stream</a> en favori pour toujours connaître la vraie URL de XalaFlix ! <span onclick="addBookmark()" id="ctrl_d">Cliquez ici</span></p>
+        <img src="./images/logo-xalaflix.webp" alt="xalaflix logo" width="416" height="139">
+    </header> 
+
+    <section>
+        <p class="intro">Les Adresses Officielles de XalaFlix :</p>
+        <div class="bnt" onclick="window.open('https://xalaflix.stream/', '_blank')">xalaflix.stream <img src="./images/popcorn.png" alt="popcorn"><br /><span>Adresse Officielle du Site</span></div>
+        <p class="foot_text">xalaflix.stream ne fonctionne pas ?</p>
+        <div style="display: flex; gap: 30px;justify-content: center;">
+            <!--  Discord -->
+            <div class="btnt" onclick="window.open('https://discord.gg/Xkmd4kc27s', '_blank')">
+                rejoindre notre Discord &lrm;
+                <img src="./images/discord.webp" width="26px" style="margin-top: -4px;">
+            </div>
+
+            <!--  Telegram -->
+            <div class="btnt" onclick="window.open('https://t.me/xalaflix_official', '_blank')">
+                rejoindre notre Telegram &lrm;
+                <img src="./images/icon-tele.jpg" width="26px" style="margin-top: -4px;border-radius: 50%;">
+            </div>
+        </div>
+
+    </section>
+    <article>
+        <h1>Xalaflix : Visionnez des films gratuits doublés en français</h1>
+        
+        <p> Xalaflix révolutionne le streaming de films en offrant un accès gratuit à un catalogue sans cesse renouvelé, avec un doublage français rapide et des fonctionnalités intuitives pour une expérience cinématographique optimale. Vous y trouverez des nouveautés exclusives, des classiques introuvables ailleurs, et un lecteur performant assurant un chargement instantané. </p><p style="text-align:center"><img src="./images/banner.jpg" width="800" height="448" alt="banner"></p> <h2>Pourquoi choisir Xalaflix pour vos soirées ciné ?</h2> <ul> <li><strong>Streaming gratuit</strong> sans abonnement</li> <li><strong>Doublage français rapide</strong> pour une immersion totale</li> <li><em>Catalogue riche et varié</em> mis à jour quotidiennement</li> <li>Interface fluide et navigation intuitive</li> <li>Mises à jour en temps réel pour les <em>nouveautés</em></li> </ul> <blockquote> « Xalaflix offre une expérience de streaming parfaitement optimisée, rivalisant avec les plateformes payantes, tout en restant accessible à tous » — Jean Dupont, expert en cinéma. </blockquote> <h2>Comment accéder à Xalaflix ?</h2> <ol> <li>Ouvrez votre navigateur et rendez-vous sur <a href="https://xalaflix.stream">xalaflix.stream</a>.</li> <li><strong>Inscrivez-vous</strong> en quelques secondes avec votre adresse e-mail.</li> <li>Choisissez votre film préféré via le menu ou la barre de recherche.</li> <li>Cliquez sur le bouton <em>Lecture</em> pour lancer le streaming instantané.</li> </ol> <blockquote> « L'interface intuitive de Xalaflix réduit le temps de navigation et permet de trouver rapidement le film désiré » — Claire Martin, spécialiste UX web. </blockquote> <h3>Fonctionnalités clés de Xalaflix</h3> <table> <tr> <th>Critère</th> <th>Xalaflix</th> <th>Plateformes payantes</th> </tr> <tr> <td>Coût</td> <td>Gratuit</td> <td>Abonnement mensuel</td> </tr> <tr> <td>Doublage français</td> <td>Oui, rapide</td> <td>Variable</td> </tr> <tr> <td>Catalogue</td> <td>Renouvelé régulièrement</td> <td>Sélection officielle</td> </tr> <tr> <td>Chargement</td> <td>Instantané</td> <td>Parfois lent</td> </tr> </table> <h2>Astuces pour tirer le meilleur parti de Xalaflix</h2> <ul> <li><em>Filtrez</em> les films par genre pour découvrir de nouveaux contenus.</li> <li>Activez les notifications pour être alerté des dernières sorties.</li> <li>Utilisez la recherche avancée pour dénicher des classiques.</li> <li>Partagez vos listes de films avec la communauté.</li> </ul> <blockquote> « Grâce à Xalaflix, j'ai pu redécouvrir des chefs-d'œuvre du cinéma en un seul clic » — Marie Rousseau, critique de médias numériques. </blockquote> <h2>Conclusion</h2> <p> En résumé, <strong>Xalaflix</strong> est la solution idéale pour profiter d'un streaming gratuit de qualité, avec un doublage français rapide et des nouveautés quotidiennes. Rejoignez dès maintenant la communauté et vivez vos soirées cinéma autrement sur Xalaflix. </p> <h2>FAQ</h2> <ol> <li> <strong>Qu'est-ce que Xalaflix ?</strong> <p>Xalaflix est un site de streaming gratuit qui propose un large catalogue de films doublés en français.</p> </li> <li> <strong>L'utilisation de Xalaflix est-elle légale ?</strong> <p>Xalaflix fonctionne dans le respect des droits d'auteur grâce à des accords avec les distributeurs (sous réserve de la législation locale).</p> </li> <li> <strong>Comment signaler un problème de streaming ?</strong> <p>Vous pouvez contacter le support via le formulaire en ligne ou l'adresse e-mail disponible sur la page de contact.</p> </li> <li> <strong>Puis-je regarder Xalaflix sur mobile ?</strong> <p>Oui, Xalaflix est optimisé pour tous les appareils mobiles et tablettes.</p> </li> <li> <strong>Xalaflix propose-t-il des sous-titres ?</strong> <p>Oui, de nombreux films sont disponibles avec des sous-titres en français et en anglais.</p> </li> <li> <strong>Comment rester informé des nouveautés sur Xalaflix ?</strong> <p>Activez les notifications ou suivez Xalaflix sur les réseaux sociaux pour ne rien manquer.</p> </li> </ol>
+
+  <br>
+  <div class="btn-hover color-9" onclick="window.open('https://xalaflix.stream/', '_blank')">Accéder à la page d'accueil</div>
+  <br>
+
+</article>
+<footer>
+    <p>Copyright © 2025 xalaflix</p>
+
+</footer>
+</body>
+</html>
