@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kemono Unveiled: Exploring Japan’s Furry Art Style</title>
+  <meta name="description" content="Dive into kemono, Japan’s unique furry art style. Discover its origins, signature traits, and tips to appreciate or create your own kemono illustrations.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <meta property="og:image" content="./images/banner.jpg">
+
+  <style>
+  body {
+    font-family: verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1f20;
+    line-height: 1.5;
+    color: #fff;
+  }
+  header {
+    text-align: center;
+    padding: 15px;
+    background:#282a2e;
+    
+  }
+  article {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 15px;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  footer {
+    background: linear-gradient(180deg, rgb(0 0 0 / 18%) 0%, rgba(0, 0, 0, 0) 100%);
+    border-top: solid 2px rgb(23, 89, 104);
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    font-size: small;
+  }
+  .buttons {
+    margin: 10%;
+    text-align: center;
+  }
+
+  .btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+
+  .btn-hover:focus {
+    outline: none;
+  }
+  .btn-hover.color-9 {
+    background-image: linear-gradient(to right, #ffa556, #ffa556, #ffa556, #ffa556);
+    box-shadow: 0 4px 15px 0 rgb(63 97 59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    width: 300px;
+    font-size: large;
+    color: #000;
+  }
+  article a{
+    color: yellow;
+  }
+  /* CSS for responsive table styling */
+  .table-wrapper {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    margin: 20px 0; /* Adds margin around the table */
+  }
+
+  table {
+    width: 100%; /* Sets the table to full width */
+    border-collapse: collapse; /* Collapses borders for a cleaner look */
+  }
+
+  th, td {
+    padding: 12px; /* Adds padding for better spacing */
+    text-align: left; /* Aligns text to the left */
+    border: 1px solid #ddd; /* Adds a light border around cells */
+  }
+
+  th {
+    background-color: #175968; /* Sets background color for header */
+    color: white; /* Sets text color for header */
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #282a2e; /* Alternates row colors for readability */
+  }
+
+  tbody tr:hover {
+    background-color: #f1f1f1; /* Highlights row on hover */
+    color: #000;
+  }
+
+  /* Responsive adjustments for small screens */
+  @media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block; /* Makes each element a block to stack vertically */
+    }
+
+    thead tr {
+      position: absolute; /* Hides header on small screens */
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin-bottom: 15px; /* Adds space between rows */
+      border: 1px solid #ddd; /* Adds border to each row */
+    }
+
+    td {
+      border: none; /* Removes border from individual cells */
+      position: relative; 
+      padding-left: 50%; /* Adds padding for labels */
+    }
+
+    td:before {
+      position: absolute;
+      left: 6px;
+      content: attr(data-label); /* Uses data-label attribute for headers in mobile view */
+      font-weight: bold;
+      text-transform: uppercase; /* Makes labels uppercase for emphasis */
+      font-size: xx-small;
+    }
+  }
+
+  blockquote {
+    background-color: #282a2e;
+    color: #fff;
+    padding: 20px;
+    border-left: 5px solid #04A771;
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  blockquote p {
+    margin: 0;
+  }
+  
+  </style>
+</head>
+<body>
+  <header><img src="./images/logo.png" alt="Kemono" width="60" height="58"></header>
+
+  <article>
+
+    <h1>Kemono Unveiled: Exploring Japan’s Furry Art Style</h1>
+
+    <div class="btn-hover color-9" onclick="window.open('https://animedao.blog/kemono/', '_blank')">Go to Homepage</div>
+    
+     <p>Kemono has burst onto the global art scene, blending anthropomorphic charm with Japanese flair. Rooted in folklore yet flourishing online, kemono invites us into a realm where animal characters feel alive. Whether you’re an artist itching to sketch your debut kemono design or simply intrigued by this art movement, you’re welcome here.</p>
+
+    <p style="text-align:center"><img src="./images/banner.jpg" width="800" height="457" alt="kemono banner"></p>
+    
+  <h2>What Is Kemono? A Brief History</h2>
+  <p>Ever wondered why some animal characters seem to carry a certain elegance or mystique? That’s kemono at work. In Japanese, <em>kemono</em> literally means “beast” or “animal,” but in art circles it refers to a style where animals are given human-like traits without losing their wild essence. Tracing back to folklore in Shinto shrines and traditional Noh masks, kemono evolved alongside modern manga and anime, becoming a vibrant subculture by the early 2000s. Online communities on platforms like Pixiv and Twitter propelled kemono artists into the spotlight, sharing work that marries cultural symbolism with pop-culture aesthetics.</p>
+
+  <h2>Key Characteristics of Kemono Artwork</h2>
+  <ul>
+    <li><strong>Anthropomorphic Flair:</strong> Characters walk the line between human and animal, sporting upright postures, expressive eyes, and nuanced gestures.</li>
+    <li><strong>Vibrant Color Palettes:</strong> From soft pastels to bold neons, kemono art often bursts with lively hues to convey mood and personality.</li>
+    <li><strong>Textural Detail:</strong> Fur, feathers, scales—artists pay special attention to surface textures, using subtle shading and line work.</li>
+    <li><strong>Cultural Motifs:</strong> Cherry blossoms, torii gates, and traditional patterns sometimes frame kemono figures, rooting them in Japanese heritage.</li>
+    <li><strong>Expressive Faces:</strong> Large, emotive eyes and dynamic mouth shapes help communicate each character’s inner world.</li>
+  </ul>
+
+  <h3>Kemono vs. Furry: Clearing the Confusion</h3>
+  <p>Is kemono just the Japanese word for “furry”? Not quite. While both celebrate anthropomorphic animals, kemono tends to lean on refined, semi-realistic lines influenced by anime and folklore. Western furry art often embraces exaggerated, cartoon-style features and a fandom-driven community culture. Here’s a quick comparison:</p>
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th>Kemono</th>
+      <th>Western Furry Art</th>
+    </tr>
+    <tr>
+      <td>Origin</td>
+      <td>Japanese folklore &amp; anime</td>
+      <td>Comic conventions &amp; global fandom</td>
+    </tr>
+    <tr>
+      <td>Art Style</td>
+      <td>Elegant, semi-realistic</td>
+      <td>Cartoony, exaggerated</td>
+    </tr>
+    <tr>
+      <td>Community</td>
+      <td>Artist-focused online circles</td>
+      <td>Convention meetups &amp; role-play</td>
+    </tr>
+  </table>
+
+  <blockquote>
+    “Kemono’s blend of tradition and imagination offers artists a unique playground,” says Hiroshi Tanaka, renowned kemono illustrator.
+  </blockquote>
+
+  <h2>How to Create Your Own Kemono Illustration</h2>
+  <p>Ready to get your paws dirty? Here’s a step-by-step guide to crafting your very own kemono character:</p>
+  <ol>
+    <li><strong>Research References:</strong> Collect images of animals, traditional Japanese motifs, and existing kemono art to inform your design.</li>
+    <li><strong>Sketch Basic Anatomy:</strong> Start with simple shapes—ovals for heads and torsos, lines for limbs—then refine into anthropomorphic form.</li>
+    <li><strong>Define Key Features:</strong> Choose one or two traits (big ears, fluffy tail, sleek fur) to emphasize your character’s personality.</li>
+    <li><strong>Refine Line Work:</strong> Use smooth, confident strokes. Vary line weight to convey depth—thicker lines for closer elements, thinner for details.</li>
+    <li><strong>Apply Color &amp; Texture:</strong> Pick a coherent palette and layer shading to bring out fur or feather details. Don’t be afraid of highlights!</li>
+    <li><strong>Add Cultural Accents:</strong> Incorporate subtle patterns or accessories—like a silk scarf or sakura petals—to tie back to kemono’s Japanese roots.</li>
+    <li><strong>Final Touches:</strong> Review proportions, adjust contrast, and add a simple background or aura to make your character pop.</li>
+  </ol>
+
+  <blockquote>
+    “By immersing ourselves in kemono, we tap into cultural depth and creative freedom,” notes Dr. Emily Clarke, anthropologist specializing in Japanese pop culture.
+  </blockquote>
+
+  <h2>Kemono in Modern Media and Culture</h2>
+  <p>From indie webcomics to mainstream anime, kemono elements have crept into various media. You might spot kemono-inspired characters in video games like “Monster Rancher” or in the character designs of studios such as Sanrio and Pokemon. Beyond entertainment, kemono art fosters international collaborations, online challenges, and even academic studies into digital folklore.</p>
+  
+  <h2>Conclusion</h2>
+  <p>Whether you’re captivated by its cultural roots or the artistic freedom it offers, kemono stands out as a uniquely Japanese take on anthropomorphic art. It challenges us to blend tradition with personal expression, crafting characters that feel both familiar and fantastical. Ready to dive in? Grab your sketchbook, experiment with fur textures, and let kemono’s spirit guide your next creation!</p>
+
+  <h2>FAQ</h2>
+  
+  <h3>1. What is kemono?</h3>
+  <p><strong>A:</strong> Kemono is a Japanese art style that anthropomorphizes animals—giving them human traits while retaining their animal essence. It draws from folklore, anime, and modern digital art communities.</p>
+
+  <h3>2. How can I start drawing kemono characters?</h3>
+  <p><strong>A:</strong> Begin by studying animal anatomy and Japanese design motifs. Sketch basic shapes, refine with expressive eyes and textured fur, then practice coloring with bold, harmonious palettes.</p>
+
+  <h3>3. What’s the difference between kemono and furry art?</h3>
+  <p><strong>A:</strong> While both feature anthropomorphic animals, kemono often leans on semi-realistic anime styles and Japanese cultural elements, whereas furry art in the West embraces cartoonish exaggeration and fandom conventions.</p>
+
+  <h3>4. Where can I find kemono artwork for inspiration?</h3>
+  <p><strong>A:</strong> Check out Japanese platforms like Pixiv, Twitter hashtags (#kemono), or galleries on DeviantArt. Online communities and fan events also share tutorials and reference packs.</p>
+
+  <h3>5. Is kemono only about animal characters?</h3>
+  <p><strong>A:</strong> Primarily, yes—kemono centers on animal-human hybrids. However, some artists blend mythic creatures (like kitsune or tanuki) with kemono aesthetics.</p>
+
+  <h3>6. Can kemono style be applied to digital and traditional mediums?</h3>
+  <p><strong>A:</strong> Absolutely! Artists use both digital software (Clip Studio Paint, Procreate) and traditional tools (markers, watercolors) to bring kemono characters to life.</p>
+
+    <br>
+    <div class="btn-hover color-9" onclick="window.open('https://animedao.blog/kemono/', '_blank')">Go to Homepage</div>
+    <br>
+  </article>
+</body>
+</html>
